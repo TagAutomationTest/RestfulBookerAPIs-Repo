@@ -1,4 +1,4 @@
- run: newman run Restful-Booker.postman_collection.json -e "Test Environment.postman_environment.json"name: Run Postman Tests with Newman
+name: Run Postman Tests with Newman
 
 on:
   push:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' # You can adjust the version if needed
 
       - name: Install Newman
         run: npm install -g newman
