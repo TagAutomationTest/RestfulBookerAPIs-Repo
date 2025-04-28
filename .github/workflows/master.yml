@@ -1,4 +1,4 @@
-name: Run Postman Tests with Newman
+ run: newman run Restful-Booker.postman_collection.json -e "Test Environment.postman_environment.json"name: Run Postman Tests with Newman
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run Postman Collection with Environment
-        run: newman run <path_to_collection.json> -e <path_to_environment.json>
+        run: newman run Restful-Booker.postman_collection.json -e "Test Environment.postman_environment.json"
