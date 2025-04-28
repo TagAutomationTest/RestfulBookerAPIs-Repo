@@ -3,7 +3,7 @@ name: Run Postman Tests with Newman
 on:
   push:
     branches:
-      - master
+      - master  # Change from "main" to "master"
 
 jobs:
   run-tests:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # You can adjust the version if needed
+          node-version: '16' # Specify Node.js version 16 or higher
 
       - name: Install Newman
         run: npm install -g newman
