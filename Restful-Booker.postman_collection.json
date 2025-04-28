@@ -341,7 +341,7 @@
 								"exec": [
 									"// Function to check the status code",
 									"function checkStatusCode(expectedStatus) {",
-									"    pm.test(\"Validate Status Code is \" + expectedStatus, function () {",
+									"    pm.test(\"Validate that Status Code is \" + expectedStatus, function () {",
 									"        pm.response.to.have.status(expectedStatus);",
 									"    });",
 									"}",
