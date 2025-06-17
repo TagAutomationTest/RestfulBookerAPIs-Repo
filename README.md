@@ -3,6 +3,13 @@
 > Automate and report Postman API tests from the command line using [Newman](https://github.com/postmanlabs/newman).
 
 ---
+## 🖼️ Report Preview
+
+Below is a preview of the HTML report generated using `newman-reporter-htmlextra`:
+
+![Report Preview](https://drive.google.com/uc?export=view&id=10l56LiETcCBg10liLSYZSbZg3JAcYkWe)
+
+---
 
 ## 📘 About
 
